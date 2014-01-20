@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A77B4F7188CED00005EF4A6 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A77B4F6188CED00005EF4A6 /* Movie.m */; };
 		5A7B8801188CBC1900662B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B8800188CBC1900662B50 /* Foundation.framework */; };
 		5A7B8803188CBC1900662B50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B8802188CBC1900662B50 /* CoreGraphics.framework */; };
 		5A7B8805188CBC1900662B50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B8804188CBC1900662B50 /* UIKit.framework */; };
@@ -39,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A77B4F5188CED00005EF4A6 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		5A77B4F6188CED00005EF4A6 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		5A77B4F8188CF82B005EF4A6 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		5A77B4FB188CF95C005EF4A6 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		5A7B87FD188CBC1900662B50 /* movieListing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movieListing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7B8800188CBC1900662B50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A7B8802188CBC1900662B50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,15 +128,19 @@
 		5A7B8806188CBC1900662B50 /* movieListing */ = {
 			isa = PBXGroup;
 			children = (
+				5A77B4FB188CF95C005EF4A6 /* AFURLResponseSerialization.h */,
+				5A77B4F8188CF82B005EF4A6 /* UIImageView+AFNetworking.h */,
 				5A7B880F188CBC1900662B50 /* AppDelegate.h */,
 				5A7B8810188CBC1900662B50 /* AppDelegate.m */,
 				5A7B8812188CBC1900662B50 /* Main.storyboard */,
-				5A7B8835188CBFD800662B50 /* MoviesViewController.h */,
-				5A7B8836188CBFD800662B50 /* MoviesViewController.m */,
 				5A7B8818188CBC1900662B50 /* Images.xcassets */,
 				5A7B8807188CBC1900662B50 /* Supporting Files */,
 				5A7B883C188CDA8700662B50 /* MovieCell.h */,
 				5A7B883D188CDA8700662B50 /* MovieCell.m */,
+				5A7B8835188CBFD800662B50 /* MoviesViewController.h */,
+				5A7B8836188CBFD800662B50 /* MoviesViewController.m */,
+				5A77B4F5188CED00005EF4A6 /* Movie.h */,
+				5A77B4F6188CED00005EF4A6 /* Movie.m */,
 			);
 			path = movieListing;
 			sourceTree = "<group>";
@@ -139,14 +148,14 @@
 		5A7B8807188CBC1900662B50 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A7B8841188CE40900662B50 /* Rotten_Tomatoes_logo.png */,
-				5A7B883F188CE36D00662B50 /* find.png */,
-				5A7B8838188CD34B00662B50 /* konqsidebar_mediaplayer.png */,
 				5A7B8839188CD34B00662B50 /* movie-bg.png */,
 				5A7B8808188CBC1900662B50 /* movieListing-Info.plist */,
 				5A7B8809188CBC1900662B50 /* InfoPlist.strings */,
 				5A7B880C188CBC1900662B50 /* main.m */,
 				5A7B880E188CBC1900662B50 /* movieListing-Prefix.pch */,
+				5A7B8841188CE40900662B50 /* Rotten_Tomatoes_logo.png */,
+				5A7B883F188CE36D00662B50 /* find.png */,
+				5A7B8838188CD34B00662B50 /* konqsidebar_mediaplayer.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -272,6 +281,7 @@
 			files = (
 				5A7B8811188CBC1900662B50 /* AppDelegate.m in Sources */,
 				5A7B880D188CBC1900662B50 /* main.m in Sources */,
+				5A77B4F7188CED00005EF4A6 /* Movie.m in Sources */,
 				5A7B883E188CDA8700662B50 /* MovieCell.m in Sources */,
 				5A7B8837188CBFD800662B50 /* MoviesViewController.m in Sources */,
 			);
@@ -482,6 +492,7 @@
 				5A7B8831188CBC1900662B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A7B8832188CBC1900662B50 /* Build configuration list for PBXNativeTarget "movieListingTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +501,7 @@
 				5A7B8834188CBC1900662B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
