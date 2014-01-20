@@ -14,13 +14,18 @@
 		5A7B880D188CBC1900662B50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B880C188CBC1900662B50 /* main.m */; };
 		5A7B8811188CBC1900662B50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B8810188CBC1900662B50 /* AppDelegate.m */; };
 		5A7B8814188CBC1900662B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B8812188CBC1900662B50 /* Main.storyboard */; };
-		5A7B8817188CBC1900662B50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B8816188CBC1900662B50 /* ViewController.m */; };
 		5A7B8819188CBC1900662B50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B8818188CBC1900662B50 /* Images.xcassets */; };
 		5A7B8820188CBC1900662B50 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B881F188CBC1900662B50 /* XCTest.framework */; };
 		5A7B8821188CBC1900662B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B8800188CBC1900662B50 /* Foundation.framework */; };
 		5A7B8822188CBC1900662B50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B8804188CBC1900662B50 /* UIKit.framework */; };
 		5A7B882A188CBC1900662B50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B8828188CBC1900662B50 /* InfoPlist.strings */; };
 		5A7B882C188CBC1900662B50 /* movieListingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B882B188CBC1900662B50 /* movieListingTests.m */; };
+		5A7B8837188CBFD800662B50 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B8836188CBFD800662B50 /* MoviesViewController.m */; };
+		5A7B883A188CD34B00662B50 /* konqsidebar_mediaplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B8838188CD34B00662B50 /* konqsidebar_mediaplayer.png */; };
+		5A7B883B188CD34B00662B50 /* movie-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B8839188CD34B00662B50 /* movie-bg.png */; };
+		5A7B883E188CDA8700662B50 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B883D188CDA8700662B50 /* MovieCell.m */; };
+		5A7B8840188CE36D00662B50 /* find.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B883F188CE36D00662B50 /* find.png */; };
+		5A7B8842188CE40900662B50 /* Rotten_Tomatoes_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B8841188CE40900662B50 /* Rotten_Tomatoes_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +50,20 @@
 		5A7B880F188CBC1900662B50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A7B8810188CBC1900662B50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A7B8813188CBC1900662B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5A7B8815188CBC1900662B50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5A7B8816188CBC1900662B50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5A7B8818188CBC1900662B50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A7B881E188CBC1900662B50 /* movieListingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = movieListingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7B881F188CBC1900662B50 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5A7B8827188CBC1900662B50 /* movieListingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "movieListingTests-Info.plist"; sourceTree = "<group>"; };
 		5A7B8829188CBC1900662B50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A7B882B188CBC1900662B50 /* movieListingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = movieListingTests.m; sourceTree = "<group>"; };
+		5A7B8835188CBFD800662B50 /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		5A7B8836188CBFD800662B50 /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		5A7B8838188CD34B00662B50 /* konqsidebar_mediaplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = konqsidebar_mediaplayer.png; sourceTree = "<group>"; };
+		5A7B8839188CD34B00662B50 /* movie-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movie-bg.png"; sourceTree = "<group>"; };
+		5A7B883C188CDA8700662B50 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		5A7B883D188CDA8700662B50 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		5A7B883F188CE36D00662B50 /* find.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = find.png; sourceTree = "<group>"; };
+		5A7B8841188CE40900662B50 /* Rotten_Tomatoes_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotten_Tomatoes_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +126,12 @@
 				5A7B880F188CBC1900662B50 /* AppDelegate.h */,
 				5A7B8810188CBC1900662B50 /* AppDelegate.m */,
 				5A7B8812188CBC1900662B50 /* Main.storyboard */,
-				5A7B8815188CBC1900662B50 /* ViewController.h */,
-				5A7B8816188CBC1900662B50 /* ViewController.m */,
+				5A7B8835188CBFD800662B50 /* MoviesViewController.h */,
+				5A7B8836188CBFD800662B50 /* MoviesViewController.m */,
 				5A7B8818188CBC1900662B50 /* Images.xcassets */,
 				5A7B8807188CBC1900662B50 /* Supporting Files */,
+				5A7B883C188CDA8700662B50 /* MovieCell.h */,
+				5A7B883D188CDA8700662B50 /* MovieCell.m */,
 			);
 			path = movieListing;
 			sourceTree = "<group>";
@@ -126,6 +139,10 @@
 		5A7B8807188CBC1900662B50 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A7B8841188CE40900662B50 /* Rotten_Tomatoes_logo.png */,
+				5A7B883F188CE36D00662B50 /* find.png */,
+				5A7B8838188CD34B00662B50 /* konqsidebar_mediaplayer.png */,
+				5A7B8839188CD34B00662B50 /* movie-bg.png */,
 				5A7B8808188CBC1900662B50 /* movieListing-Info.plist */,
 				5A7B8809188CBC1900662B50 /* InfoPlist.strings */,
 				5A7B880C188CBC1900662B50 /* main.m */,
@@ -228,7 +245,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7B883B188CD34B00662B50 /* movie-bg.png in Resources */,
 				5A7B8819188CBC1900662B50 /* Images.xcassets in Resources */,
+				5A7B8842188CE40900662B50 /* Rotten_Tomatoes_logo.png in Resources */,
+				5A7B8840188CE36D00662B50 /* find.png in Resources */,
+				5A7B883A188CD34B00662B50 /* konqsidebar_mediaplayer.png in Resources */,
 				5A7B880B188CBC1900662B50 /* InfoPlist.strings in Resources */,
 				5A7B8814188CBC1900662B50 /* Main.storyboard in Resources */,
 			);
@@ -249,9 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A7B8817188CBC1900662B50 /* ViewController.m in Sources */,
 				5A7B8811188CBC1900662B50 /* AppDelegate.m in Sources */,
 				5A7B880D188CBC1900662B50 /* main.m in Sources */,
+				5A7B883E188CDA8700662B50 /* MovieCell.m in Sources */,
+				5A7B8837188CBFD800662B50 /* MoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
