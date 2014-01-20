@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A28353E188D13DC00EE2566 /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A28353D188D13DC00EE2566 /* MovieDetailsViewController.m */; };
 		5A77B4F7188CED00005EF4A6 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A77B4F6188CED00005EF4A6 /* Movie.m */; };
+		5A77B4FD188D0C14005EF4A6 /* despicable_ori.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A77B4FC188D0C14005EF4A6 /* despicable_ori.jpg */; };
 		5A7B8801188CBC1900662B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B8800188CBC1900662B50 /* Foundation.framework */; };
 		5A7B8803188CBC1900662B50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B8802188CBC1900662B50 /* CoreGraphics.framework */; };
 		5A7B8805188CBC1900662B50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7B8804188CBC1900662B50 /* UIKit.framework */; };
@@ -40,10 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A28353C188D13DC00EE2566 /* MovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailsViewController.h; sourceTree = "<group>"; };
+		5A28353D188D13DC00EE2566 /* MovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailsViewController.m; sourceTree = "<group>"; };
 		5A77B4F5188CED00005EF4A6 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		5A77B4F6188CED00005EF4A6 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		5A77B4F8188CF82B005EF4A6 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		5A77B4FB188CF95C005EF4A6 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		5A77B4FC188D0C14005EF4A6 /* despicable_ori.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = despicable_ori.jpg; sourceTree = "<group>"; };
 		5A7B87FD188CBC1900662B50 /* movieListing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movieListing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7B8800188CBC1900662B50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A7B8802188CBC1900662B50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -141,6 +146,8 @@
 				5A7B8836188CBFD800662B50 /* MoviesViewController.m */,
 				5A77B4F5188CED00005EF4A6 /* Movie.h */,
 				5A77B4F6188CED00005EF4A6 /* Movie.m */,
+				5A28353C188D13DC00EE2566 /* MovieDetailsViewController.h */,
+				5A28353D188D13DC00EE2566 /* MovieDetailsViewController.m */,
 			);
 			path = movieListing;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 		5A7B8807188CBC1900662B50 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A77B4FC188D0C14005EF4A6 /* despicable_ori.jpg */,
 				5A7B8839188CD34B00662B50 /* movie-bg.png */,
 				5A7B8808188CBC1900662B50 /* movieListing-Info.plist */,
 				5A7B8809188CBC1900662B50 /* InfoPlist.strings */,
@@ -260,6 +268,7 @@
 				5A7B8840188CE36D00662B50 /* find.png in Resources */,
 				5A7B883A188CD34B00662B50 /* konqsidebar_mediaplayer.png in Resources */,
 				5A7B880B188CBC1900662B50 /* InfoPlist.strings in Resources */,
+				5A77B4FD188D0C14005EF4A6 /* despicable_ori.jpg in Resources */,
 				5A7B8814188CBC1900662B50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +292,7 @@
 				5A7B880D188CBC1900662B50 /* main.m in Sources */,
 				5A77B4F7188CED00005EF4A6 /* Movie.m in Sources */,
 				5A7B883E188CDA8700662B50 /* MovieCell.m in Sources */,
+				5A28353E188D13DC00EE2566 /* MovieDetailsViewController.m in Sources */,
 				5A7B8837188CBFD800662B50 /* MoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
