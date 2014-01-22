@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A13BEC218902C9600DCD8B0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13BEC118902C9600DCD8B0 /* Reachability.m */; };
 		5A26221D188EC44E007906D6 /* MoviesArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A26221C188EC44E007906D6 /* MoviesArray.m */; };
 		5A28353E188D13DC00EE2566 /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A28353D188D13DC00EE2566 /* MovieDetailsViewController.m */; };
 		5A77B4F7188CED00005EF4A6 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A77B4F6188CED00005EF4A6 /* Movie.m */; };
@@ -31,6 +30,7 @@
 		5A7B883E188CDA8700662B50 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B883D188CDA8700662B50 /* MovieCell.m */; };
 		5A7B8840188CE36D00662B50 /* find.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B883F188CE36D00662B50 /* find.png */; };
 		5A7B8842188CE40900662B50 /* Rotten_Tomatoes_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B8841188CE40900662B50 /* Rotten_Tomatoes_logo.png */; };
+		5AB717DE189033010054A925 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB717DD189033010054A925 /* Reachability.m */; };
 		8D765851E5B244EE8F21863F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7EFBC47B14426991939A62 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A13BEC018902C9600DCD8B0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		5A13BEC118902C9600DCD8B0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5A26221B188EC44E007906D6 /* MoviesArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoviesArray.h; path = ../MoviesArray.h; sourceTree = "<group>"; };
 		5A26221C188EC44E007906D6 /* MoviesArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoviesArray.m; path = ../MoviesArray.m; sourceTree = "<group>"; };
 		5A28353C188D13DC00EE2566 /* MovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailsViewController.h; sourceTree = "<group>"; };
@@ -81,6 +79,8 @@
 		5A7B883D188CDA8700662B50 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		5A7B883F188CE36D00662B50 /* find.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = find.png; sourceTree = "<group>"; };
 		5A7B8841188CE40900662B50 /* Rotten_Tomatoes_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rotten_Tomatoes_logo.png; sourceTree = "<group>"; };
+		5AB717DC189033010054A925 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../Reachability.h; sourceTree = "<group>"; };
+		5AB717DD189033010054A925 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../Reachability.m; sourceTree = "<group>"; };
 		DA9E5398474149C8BC97C53D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EF7EFBC47B14426991939A62 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,13 +145,14 @@
 		5A7B8806188CBC1900662B50 /* movieListing */ = {
 			isa = PBXGroup;
 			children = (
+				5AB717DC189033010054A925 /* Reachability.h */,
+				5AB717DD189033010054A925 /* Reachability.m */,
 				5A77B4FB188CF95C005EF4A6 /* AFURLResponseSerialization.h */,
 				5A77B4F8188CF82B005EF4A6 /* UIImageView+AFNetworking.h */,
 				5A7B880F188CBC1900662B50 /* AppDelegate.h */,
 				5A7B8810188CBC1900662B50 /* AppDelegate.m */,
 				5A7B8812188CBC1900662B50 /* Main.storyboard */,
 				5A7B8818188CBC1900662B50 /* Images.xcassets */,
-				5A7B8807188CBC1900662B50 /* Supporting Files */,
 				5A77B4F5188CED00005EF4A6 /* Movie.h */,
 				5A77B4F6188CED00005EF4A6 /* Movie.m */,
 				5A7B883C188CDA8700662B50 /* MovieCell.h */,
@@ -162,8 +163,7 @@
 				5A7B8836188CBFD800662B50 /* MoviesViewController.m */,
 				5A28353C188D13DC00EE2566 /* MovieDetailsViewController.h */,
 				5A28353D188D13DC00EE2566 /* MovieDetailsViewController.m */,
-				5A13BEC018902C9600DCD8B0 /* Reachability.h */,
-				5A13BEC118902C9600DCD8B0 /* Reachability.m */,
+				5A7B8807188CBC1900662B50 /* Supporting Files */,
 			);
 			path = movieListing;
 			sourceTree = "<group>";
@@ -341,11 +341,11 @@
 			files = (
 				5A7B8811188CBC1900662B50 /* AppDelegate.m in Sources */,
 				5A7B880D188CBC1900662B50 /* main.m in Sources */,
-				5A13BEC218902C9600DCD8B0 /* Reachability.m in Sources */,
 				5A77B4F7188CED00005EF4A6 /* Movie.m in Sources */,
 				5A26221D188EC44E007906D6 /* MoviesArray.m in Sources */,
 				5A7B883E188CDA8700662B50 /* MovieCell.m in Sources */,
 				5A28353E188D13DC00EE2566 /* MovieDetailsViewController.m in Sources */,
+				5AB717DE189033010054A925 /* Reachability.m in Sources */,
 				5A7B8837188CBFD800662B50 /* MoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
