@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A26221D188EC44E007906D6 /* MoviesArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A26221C188EC44E007906D6 /* MoviesArray.m */; };
 		5A28353E188D13DC00EE2566 /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A28353D188D13DC00EE2566 /* MovieDetailsViewController.m */; };
 		5A77B4F7188CED00005EF4A6 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A77B4F6188CED00005EF4A6 /* Movie.m */; };
 		5A77B4FD188D0C14005EF4A6 /* despicable_ori.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A77B4FC188D0C14005EF4A6 /* despicable_ori.jpg */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A26221B188EC44E007906D6 /* MoviesArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoviesArray.h; path = ../MoviesArray.h; sourceTree = "<group>"; };
+		5A26221C188EC44E007906D6 /* MoviesArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoviesArray.m; path = ../MoviesArray.m; sourceTree = "<group>"; };
 		5A28353C188D13DC00EE2566 /* MovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailsViewController.h; sourceTree = "<group>"; };
 		5A28353D188D13DC00EE2566 /* MovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailsViewController.m; sourceTree = "<group>"; };
 		5A77B4F5188CED00005EF4A6 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
@@ -140,12 +143,14 @@
 				5A7B8812188CBC1900662B50 /* Main.storyboard */,
 				5A7B8818188CBC1900662B50 /* Images.xcassets */,
 				5A7B8807188CBC1900662B50 /* Supporting Files */,
-				5A7B883C188CDA8700662B50 /* MovieCell.h */,
-				5A7B883D188CDA8700662B50 /* MovieCell.m */,
-				5A7B8835188CBFD800662B50 /* MoviesViewController.h */,
-				5A7B8836188CBFD800662B50 /* MoviesViewController.m */,
 				5A77B4F5188CED00005EF4A6 /* Movie.h */,
 				5A77B4F6188CED00005EF4A6 /* Movie.m */,
+				5A7B883C188CDA8700662B50 /* MovieCell.h */,
+				5A7B883D188CDA8700662B50 /* MovieCell.m */,
+				5A26221B188EC44E007906D6 /* MoviesArray.h */,
+				5A26221C188EC44E007906D6 /* MoviesArray.m */,
+				5A7B8835188CBFD800662B50 /* MoviesViewController.h */,
+				5A7B8836188CBFD800662B50 /* MoviesViewController.m */,
 				5A28353C188D13DC00EE2566 /* MovieDetailsViewController.h */,
 				5A28353D188D13DC00EE2566 /* MovieDetailsViewController.m */,
 			);
@@ -291,6 +296,7 @@
 				5A7B8811188CBC1900662B50 /* AppDelegate.m in Sources */,
 				5A7B880D188CBC1900662B50 /* main.m in Sources */,
 				5A77B4F7188CED00005EF4A6 /* Movie.m in Sources */,
+				5A26221D188EC44E007906D6 /* MoviesArray.m in Sources */,
 				5A7B883E188CDA8700662B50 /* MovieCell.m in Sources */,
 				5A28353E188D13DC00EE2566 /* MovieDetailsViewController.m in Sources */,
 				5A7B8837188CBFD800662B50 /* MoviesViewController.m in Sources */,
