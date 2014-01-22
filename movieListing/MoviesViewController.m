@@ -8,11 +8,16 @@
 
 #import "MoviesViewController.h"
 #import "MovieCell.h"
-#import "MovieDetailsViewController.h"
 #import "UIImageView+AFNetworking.h"
+#import "MovieDetailsViewController.h"
 #import "MoviesArray.h"
 #import "SVProgressHUD.h"
 
+//import Reachability class
+#import "Reachability.h"
+
+// declare Reachability, you no longer have a singleton but manage instances
+Reachability* reachability;
 
 @interface MoviesViewController ()
 {
@@ -54,9 +59,31 @@
 
    [SVProgressHUD showWithStatus:@"Retrieving movie results..."];
     
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNetworkChange:) name:kReachabilityChangedNotification object:nil];
+    
+    reachability = [Reachability reachabilityForInternetConnection];
+    [reachability startNotifier];
+    
+    NetworkStatus remoteHostStatus = [reachability currentReachabilityStatus];
+    
+    if(remoteHostStatus == NotReachable) {
+        NSLog(@"No network connection detected...");
+        [SVProgressHUD showWithStatus:@"No network connection detected..."];
+    }
+    else if (remoteHostStatus == ReachableViaWiFi) {
+        NSLog(@"wifi available");
+        [SVProgressHUD dismiss];
+    }
+    else if (remoteHostStatus == ReachableViaWWAN) {
+        NSLog(@"cell reception detected");
+        [SVProgressHUD dismiss];
+    }
+
+    
+    // TODO: Remove manuaoly checking network connectivity.
     nomatchesView = [[UIView alloc] initWithFrame:self.view.frame];
     nomatchesView.backgroundColor = [UIColor clearColor];
-    
     matchesLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0,320,120)];
     matchesLabel.font = [UIFont boldSystemFontOfSize:18];
     matchesLabel.numberOfLines = 1;
@@ -65,18 +92,36 @@
     matchesLabel.shadowOffset = CGSizeMake(0, 1);
     matchesLabel.backgroundColor = [UIColor clearColor];
     matchesLabel.textAlignment = NSTextAlignmentCenter;
-    
-    
     //Here is the text for when loading data or there are no results
     matchesLabel.text = @"Searching for movies...";
-    
-    
     nomatchesView.hidden = YES;
     [nomatchesView addSubview:matchesLabel];
     [self.tableView insertSubview:nomatchesView belowSubview:self.tableView];
     
     [self refresh];
 }
+
+- (void) handleNetworkChange:(NSNotification *)notice
+{
+    
+    NetworkStatus remoteHostStatus = [reachability currentReachabilityStatus];
+    
+    if(remoteHostStatus == NotReachable) {
+        NSLog(@"WiFi signal lost");
+        [SVProgressHUD showWithStatus:@"WiFi signal lost"];
+    }
+    else if (remoteHostStatus == ReachableViaWiFi) {
+        NSLog(@"WiFi signal recovered");
+        
+        [self reload];
+        [SVProgressHUD dismiss];
+    }
+    else if (remoteHostStatus == ReachableViaWWAN) {
+        NSLog(@"Cell phone reception now available");
+        [SVProgressHUD dismiss];
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -106,16 +151,11 @@
     
     MovieCell *cell = (MovieCell *)[tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     
-  //  UIImageView *imageView;
-    
     MoviesArray *movie = self.movies[indexPath.row];
     cell.movieTitleLabel.text = movie.title;
     cell.synopsisLabel.text = movie.synopsis;
     cell.castingLabel.text = movie.cast;
-    
-    // This loads images very slow
     cell.previewImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:movie.image]]];
-    
     [SVProgressHUD dismiss];
     return cell;
 }
@@ -146,8 +186,6 @@
 
 -(void) refreshTableView {
     [self.tableView reloadData];
-    
-    
     
     NSLog(@"Refreshing data. Please wait.");
     [refreshControl endRefreshing];
