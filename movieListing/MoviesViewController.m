@@ -155,8 +155,19 @@ Reachability* reachability;
     cell.movieTitleLabel.text = movie.title;
     cell.synopsisLabel.text = movie.synopsis;
     cell.castingLabel.text = movie.cast;
-    cell.previewImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:movie.image]]];
+    
+    //Download images asynchronously
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:movie.image, indexPath.row]];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [cell.previewImage setImageWithURLRequest:urlRequest
+                               placeholderImage:nil
+                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                            cell.previewImage.image = image;
+                                        } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+                                            NSLog(@"Failed to download image: %@", error);
+                                        }];
     [SVProgressHUD dismiss];
+    
     return cell;
 }
 
